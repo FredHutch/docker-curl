@@ -1,3 +1,4 @@
-FROM alpine:3.8
+FROM ubuntu:20.04
 
-RUN apk add --no-cache curl bash jq
+RUN apt-get update && \
+    apt-get install -y curl bash jq
